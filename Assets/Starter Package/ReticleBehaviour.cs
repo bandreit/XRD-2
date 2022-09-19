@@ -26,8 +26,7 @@ using UnityEngine.XR.ARSubsystems;
 public class ReticleBehaviour : MonoBehaviour
 {
     public GameObject Child;
-    public DrivingSurfaceManager DrivingSurfaceManager;
-
+    public PortalManager PortalManager;
     public ARPlane CurrentPlane;
 
     // Start is called before the first frame update
@@ -38,6 +37,29 @@ public class ReticleBehaviour : MonoBehaviour
 
     private void Update()
     {
-        // TODO: Conduct a ray cast to position this object.
+        var screenCenter = Camera.main.ViewportToScreenPoint(new Vector3(0.5f, 0.5f));
+        var hits = new List<ARRaycastHit>();
+        PortalManager.RaycastManager.Raycast(screenCenter, hits, TrackableType.PlaneWithinBounds);
+        
+        CurrentPlane = null;
+        ARRaycastHit? hit = null;
+        if (hits.Count > 0)
+        {
+            // If you don't have a locked plane already...
+            var lockedPlane = PortalManager.LockedPlane;
+            hit = lockedPlane == null
+                // ... use the first hit in `hits`.
+                ? hits[0]
+                // Otherwise use the locked plane, if it's there.
+                : hits.SingleOrDefault(x => x.trackableId == lockedPlane.trackableId);
+        }
+        
+        if (hit.HasValue)
+        {
+            CurrentPlane = PortalManager.PlaneManager.GetPlane(hit.Value.trackableId);
+            // Move this reticle to the location of the hit.
+            transform.position = hit.Value.pose.position;
+        }
+        Child.SetActive(CurrentPlane != null);
     }
 }
