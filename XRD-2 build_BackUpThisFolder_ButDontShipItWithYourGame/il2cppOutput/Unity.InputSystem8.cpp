@@ -830,7 +830,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteral7ED914680C555D96C6ADF1D908946F172FCFAFCB
 IL2CPP_EXTERN_C String_t* _stringLiteral80C0A09DC56E67593A40EC47DEE2A4827DB0BC33;
 IL2CPP_EXTERN_C String_t* _stringLiteral82D9A561A7A240949C795C99087C473D0967B043;
 IL2CPP_EXTERN_C String_t* _stringLiteral85B9AAF0EB29996A5ABED6647FBC8A4437062717;
-IL2CPP_EXTERN_C String_t* _stringLiteral8877CEE03276507B2E02F0D44BD5904F4DCDDCB7;
 IL2CPP_EXTERN_C String_t* _stringLiteral894192F113AFCA62FF819992911789F3CD2A99BF;
 IL2CPP_EXTERN_C String_t* _stringLiteral8ABFE73B54F1E2EDA1877D47B6AD4176818D1A01;
 IL2CPP_EXTERN_C String_t* _stringLiteral8F6CFBA1DD39F197A0470DD4831EDB73FF9AA184;
@@ -862,7 +861,6 @@ IL2CPP_EXTERN_C String_t* _stringLiteralD64DE515DE159C401BB82652225D6BE22CDAD7A1
 IL2CPP_EXTERN_C String_t* _stringLiteralD748E233FD289CD4B1ED5D7797639399A9B696ED;
 IL2CPP_EXTERN_C String_t* _stringLiteralD8332BDAEF71624DC1D56CDA64F0BAC2461AA9EF;
 IL2CPP_EXTERN_C String_t* _stringLiteralD8D5235574444C342D8D4E761289705C697DD73F;
-IL2CPP_EXTERN_C String_t* _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709;
 IL2CPP_EXTERN_C String_t* _stringLiteralDC29674F226716B02549B8B392EB04F0D3FBEB76;
 IL2CPP_EXTERN_C String_t* _stringLiteralDC71B380AFF23A38F6029B32B61C6943CB960350;
 IL2CPP_EXTERN_C String_t* _stringLiteralE2F45012730FED3906C009972A37FF803AFC44F5;
@@ -7162,18 +7160,16 @@ struct InputManager_t69FCFDAC90F8EBB8EF4950CC0BE617D842A39210  : public RuntimeO
 	InputDeviceExecuteCommandDelegate_t94A8BB806676141BFD8EFA497EC51C685778718A* ___m_DeviceFindExecuteCommandDelegate_29;
 	// System.Int32 UnityEngine.InputSystem.InputManager::m_DeviceFindExecuteCommandDeviceId
 	int32_t ___m_DeviceFindExecuteCommandDeviceId_30;
-	// System.Boolean UnityEngine.InputSystem.InputManager::m_HaveSentStartupAnalytics
-	bool ___m_HaveSentStartupAnalytics_31;
 	// UnityEngine.InputSystem.LowLevel.IInputRuntime UnityEngine.InputSystem.InputManager::m_Runtime
-	RuntimeObject* ___m_Runtime_32;
+	RuntimeObject* ___m_Runtime_31;
 	// UnityEngine.InputSystem.LowLevel.InputMetrics UnityEngine.InputSystem.InputManager::m_Metrics
-	InputMetrics_t78495D1E8D7F510AC82FAD0A297AE5FA4AAC1338 ___m_Metrics_33;
+	InputMetrics_t78495D1E8D7F510AC82FAD0A297AE5FA4AAC1338 ___m_Metrics_32;
 	// UnityEngine.InputSystem.InputSettings UnityEngine.InputSystem.InputManager::m_Settings
-	InputSettings_tBA8835B505722A59702A08BCBA46ECF0B0274EEF* ___m_Settings_34;
+	InputSettings_tBA8835B505722A59702A08BCBA46ECF0B0274EEF* ___m_Settings_33;
 	// UnityEngine.InputSystem.InputManager/StateChangeMonitorsForDevice[] UnityEngine.InputSystem.InputManager::m_StateChangeMonitors
-	StateChangeMonitorsForDeviceU5BU5D_tA1D732EEFF09F568D8FDA6908633B6DAD38B61F4* ___m_StateChangeMonitors_35;
+	StateChangeMonitorsForDeviceU5BU5D_tA1D732EEFF09F568D8FDA6908633B6DAD38B61F4* ___m_StateChangeMonitors_34;
 	// UnityEngine.InputSystem.Utilities.InlinedArray`1<UnityEngine.InputSystem.InputManager/StateChangeMonitorTimeout> UnityEngine.InputSystem.InputManager::m_StateChangeMonitorTimeouts
-	InlinedArray_1_t63A16C5FE53708C13F492320BA02E124371662FA ___m_StateChangeMonitorTimeouts_36;
+	InlinedArray_1_t63A16C5FE53708C13F492320BA02E124371662FA ___m_StateChangeMonitorTimeouts_35;
 };
 
 // UnityEngine.InputSystem.InputSettings
@@ -10476,10 +10472,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Screen_get_orientation_m7B47A2719DDE296357BB3199AB3BECC49F9F4A6D (const RuntimeMethod* method) ;
 // System.Boolean UnityEngine.Application::get_isBatchMode()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Application_get_isBatchMode_mBE1AD2AA536A0252E56EF19F72E3EA31A8733EE9 (const RuntimeMethod* method) ;
-// UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::RegisterEvent(System.String,System.Int32,System.Int32,System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR int32_t Analytics_RegisterEvent_m04F47ED2958F38CE0CE9538B3DBB3E46E08B49B0 (String_t* ___eventName0, int32_t ___maxEventPerHour1, int32_t ___maxItems2, String_t* ___vendorKey3, String_t* ___prefix4, const RuntimeMethod* method) ;
-// UnityEngine.Analytics.AnalyticsResult UnityEngine.Analytics.Analytics::SendEvent(System.String,System.Object,System.Int32,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Analytics_SendEvent_m4B1708AD606946C8D5E41DECA1C76960129E0C62 (String_t* ___eventName0, RuntimeObject* ___parameters1, int32_t ___ver2, String_t* ___prefix3, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.LowLevel.NativeInputRuntime::.ctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeInputRuntime__ctor_mF029A72DDB68E34A46455E6354309A9585D37573 (NativeInputRuntime_t312F8D8360E6CB6754980EC6DBCA824F927343C7* __this, const RuntimeMethod* method) ;
 // System.Void UnityEngine.InputSystem.LowLevel.InputUpdateDelegate::Invoke(UnityEngine.InputSystem.LowLevel.InputUpdateType,UnityEngine.InputSystem.LowLevel.InputEventBuffer&)
@@ -34693,20 +34685,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NativeInputRuntime_get_isInBatchMode_m42
 // System.Void UnityEngine.InputSystem.LowLevel.NativeInputRuntime::RegisterAnalyticsEvent(System.String,System.Int32,System.Int32)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeInputRuntime_RegisterAnalyticsEvent_m1D681549F26FF719E0B0C1E02C4637DF9806315E (NativeInputRuntime_t312F8D8360E6CB6754980EC6DBCA824F927343C7* __this, String_t* ___name0, int32_t ___maxPerHour1, int32_t ___maxPropertiesPerEvent2, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8877CEE03276507B2E02F0D44BD5904F4DCDDCB7);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// Analytics.Analytics.RegisterEvent(name, maxPerHour, maxPropertiesPerEvent, vendorKey);
-		String_t* L_0 = ___name0;
-		int32_t L_1 = ___maxPerHour1;
-		int32_t L_2 = ___maxPropertiesPerEvent2;
-		int32_t L_3;
-		L_3 = Analytics_RegisterEvent_m04F47ED2958F38CE0CE9538B3DBB3E46E08B49B0(L_0, L_1, L_2, _stringLiteral8877CEE03276507B2E02F0D44BD5904F4DCDDCB7, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, NULL);
 		// }
 		return;
 	}
@@ -34714,18 +34693,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeInputRuntime_RegisterAnalyticsEven
 // System.Void UnityEngine.InputSystem.LowLevel.NativeInputRuntime::SendAnalyticsEvent(System.String,System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NativeInputRuntime_SendAnalyticsEvent_mC6806BA8898251A3212905CCA9036D58DDECCA77 (NativeInputRuntime_t312F8D8360E6CB6754980EC6DBCA824F927343C7* __this, String_t* ___name0, RuntimeObject* ___data1, const RuntimeMethod* method) 
 {
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709);
-		s_Il2CppMethodInitialized = true;
-	}
-	{
-		// Analytics.Analytics.SendEvent(name, data);
-		String_t* L_0 = ___name0;
-		RuntimeObject* L_1 = ___data1;
-		int32_t L_2;
-		L_2 = Analytics_SendEvent_m4B1708AD606946C8D5E41DECA1C76960129E0C62(L_0, L_1, 1, _stringLiteralDA39A3EE5E6B4B0D3255BFEF95601890AFD80709, NULL);
 		// }
 		return;
 	}

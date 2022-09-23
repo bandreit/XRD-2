@@ -1,48 +1,86 @@
+﻿// (c) 2020 Tongzhou Yu
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR.ARFoundation;
+using UnityEngine.Rendering;
 
 public class PortalManager : MonoBehaviour
 {
-    public ARPlaneManager PlaneManager;
-    public ARRaycastManager RaycastManager;
-    public ARPlane LockedPlane;
 
-    public void LockPlane(ARPlane keepPlane)
+    //This materials matter needs to be optimizated!
+    public GameObject[] materials;
+
+    private Vector3 camPostionInPortalSpace;
+
+    bool wasInFront;
+    bool inOtherWorld;
+
+    bool hasCollided;
+
+    // Start is called before the first frame update
+    void Start()
     {
-        // Disable all planes except the one we want to keep
-        var arPlane = keepPlane.GetComponent<ARPlane>();
-        foreach (var plane in PlaneManager.trackables)
-        {
-            if (plane != arPlane)
-            {
-                plane.gameObject.SetActive(false);
-            }
-        }
-
-        LockedPlane = arPlane;
-        PlaneManager.planesChanged += DisableNewPlanes;
+        SetMaterials(false);
     }
 
-    private void Start()
+    void SetMaterials(bool fullRender)
     {
-        PlaneManager = GetComponent<ARPlaneManager>();
+        foreach (var mat in materials)
+        {
+            mat.SetActive(fullRender);
+        }
+    }
+
+    //Set bidirectional function
+    bool GetIsInFront()
+    {
+        GameObject MainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        Vector3 worldPos = MainCamera.transform.position + MainCamera.transform.forward * Camera.main.nearClipPlane;
+        camPostionInPortalSpace = transform.InverseTransformPoint(worldPos);
+        return camPostionInPortalSpace.y >= 0 ? true : false;
+    }
+
+    private void OnTriggerEnter(Collider collider)
+    {
+        GameObject MainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        if (collider.transform != MainCamera.transform)
+            return;
+        wasInFront = GetIsInFront();
+        hasCollided = true;
+
+    }
+
+    // Update is called once per frame
+    void OnTriggerExit(Collider collider)
+    {
+        GameObject MainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+        if (collider.transform != MainCamera.transform)
+            return;
+        hasCollided = false;
+    }
+
+    void whileCameraColliding()
+    {
+        if (!hasCollided)
+            return;
+        bool isInFront = GetIsInFront();
+        if ((isInFront && !wasInFront) || (wasInFront && !isInFront))
+        {
+            inOtherWorld = !inOtherWorld;
+            SetMaterials(inOtherWorld);
+        }
+        wasInFront = isInFront;
+    }
+
+    private void OnDestroy()
+    {
+        SetMaterials(true);
     }
 
     private void Update()
     {
-        if (LockedPlane?.subsumedBy != null)
-        {
-            LockedPlane = LockedPlane.subsumedBy;
-        }
+        whileCameraColliding();
     }
 
-    private void DisableNewPlanes(ARPlanesChangedEventArgs args)
-    {
-        foreach (var plane in args.added)
-        {
-            plane.gameObject.SetActive(false);
-        }
-    }
 }
