@@ -717,8 +717,6 @@ struct Action_1_t161BF5C7EB5DF02478A47F7797FFA92436E02D24;
 struct Action_1_tE214223F634E1D7AF0009384D19DAB5B1650C0B7;
 // System.Action`1<UnityEngine.Rendering.DebugUI/Foldout/ContextMenuItem>
 struct Action_1_t07DD9AC915A03EDC0865AB8322A36D86E07F9239;
-// System.Action`1<UnityEngine.InputSystem.InputAnalytics/StartupEventData/DeviceInfo>
-struct Action_1_t842004A8BCBB22C216E75A1DF8C5B746ACD24ECC;
 // System.Action`1<UnityEngine.InputSystem.Layouts.InputControlLayout/Collection/LayoutMatcher>
 struct Action_1_tC7FCBF8A4A71CAEDCED5DFA366D84FD8A91044EA;
 // System.Action`2<UnityEngine.InputSystem.InputControl,UnityEngine.InputSystem.LowLevel.InputEventPtr>
@@ -5723,35 +5721,6 @@ struct ContextMenuItem_t0D29D1ECB0C1F769EFC9ACA2D0AE6B1A8A4736A9_marshaled_com
 	Il2CppMethodPointer ___action_1;
 };
 
-// UnityEngine.InputSystem.InputAnalytics/StartupEventData/DeviceInfo
-struct DeviceInfo_tD672F72E1365BFD8A52EB7A1BCC2BE79BBE40CDA 
-{
-	// System.String UnityEngine.InputSystem.InputAnalytics/StartupEventData/DeviceInfo::layout
-	String_t* ___layout_0;
-	// System.String UnityEngine.InputSystem.InputAnalytics/StartupEventData/DeviceInfo::interface
-	String_t* ___interface_1;
-	// System.String UnityEngine.InputSystem.InputAnalytics/StartupEventData/DeviceInfo::product
-	String_t* ___product_2;
-	// System.Boolean UnityEngine.InputSystem.InputAnalytics/StartupEventData/DeviceInfo::native
-	bool ___native_3;
-};
-// Native definition for P/Invoke marshalling of UnityEngine.InputSystem.InputAnalytics/StartupEventData/DeviceInfo
-struct DeviceInfo_tD672F72E1365BFD8A52EB7A1BCC2BE79BBE40CDA_marshaled_pinvoke
-{
-	char* ___layout_0;
-	char* ___interface_1;
-	char* ___product_2;
-	int32_t ___native_3;
-};
-// Native definition for COM marshalling of UnityEngine.InputSystem.InputAnalytics/StartupEventData/DeviceInfo
-struct DeviceInfo_tD672F72E1365BFD8A52EB7A1BCC2BE79BBE40CDA_marshaled_com
-{
-	Il2CppChar* ___layout_0;
-	Il2CppChar* ___interface_1;
-	Il2CppChar* ___product_2;
-	int32_t ___native_3;
-};
-
 // UnityEngine.UIElements.UQueryState`1/ActionQueryMatcher<System.Object>
 struct ActionQueryMatcher_tB76860A856401075A2CF71D45AC72A9C0F1BB99E  : public UQueryMatcher_tF8783F54BA397641240DA7025126F6301EF53FF8
 {
@@ -10196,11 +10165,6 @@ struct Action_1_t3DCEDFA00DA9E65ECB370E6BE73C95D8C3B5838B  : public MulticastDel
 
 // System.Action`1<UnityEngine.Rendering.DebugUI/Foldout/ContextMenuItem>
 struct Action_1_t07DD9AC915A03EDC0865AB8322A36D86E07F9239  : public MulticastDelegate_t
-{
-};
-
-// System.Action`1<UnityEngine.InputSystem.InputAnalytics/StartupEventData/DeviceInfo>
-struct Action_1_t842004A8BCBB22C216E75A1DF8C5B746ACD24ECC  : public MulticastDelegate_t
 {
 };
 
@@ -25688,77 +25652,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m1464FDA6B99E3098A615051D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m91C72AB142C1ED1618F5B3D9DADCB3CEF510CF54_gshared (Action_1_t07DD9AC915A03EDC0865AB8322A36D86E07F9239* __this, ContextMenuItem_t0D29D1ECB0C1F769EFC9ACA2D0AE6B1A8A4736A9 ___obj0, const RuntimeMethod* method) 
 {
 	typedef void (*FunctionPointerType) (RuntimeObject*, ContextMenuItem_t0D29D1ECB0C1F769EFC9ACA2D0AE6B1A8A4736A9, const RuntimeMethod*);
-	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-void Action_1_Invoke_m720B82A3BAF84244BB030145EA2755A324F703B4_Multicast(Action_1_t842004A8BCBB22C216E75A1DF8C5B746ACD24ECC* __this, DeviceInfo_tD672F72E1365BFD8A52EB7A1BCC2BE79BBE40CDA ___obj0, const RuntimeMethod* method)
-{
-	il2cpp_array_size_t length = __this->___delegates_13->max_length;
-	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
-	for (il2cpp_array_size_t i = 0; i < length; i++)
-	{
-		Action_1_t842004A8BCBB22C216E75A1DF8C5B746ACD24ECC* currentDelegate = reinterpret_cast<Action_1_t842004A8BCBB22C216E75A1DF8C5B746ACD24ECC*>(delegatesToInvoke[i]);
-		typedef void (*FunctionPointerType) (RuntimeObject*, DeviceInfo_tD672F72E1365BFD8A52EB7A1BCC2BE79BBE40CDA, const RuntimeMethod*);
-		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
-	}
-}
-void Action_1_Invoke_m720B82A3BAF84244BB030145EA2755A324F703B4_Open(Action_1_t842004A8BCBB22C216E75A1DF8C5B746ACD24ECC* __this, DeviceInfo_tD672F72E1365BFD8A52EB7A1BCC2BE79BBE40CDA ___obj0, const RuntimeMethod* method)
-{
-	typedef void (*FunctionPointerType) (DeviceInfo_tD672F72E1365BFD8A52EB7A1BCC2BE79BBE40CDA, const RuntimeMethod*);
-	((FunctionPointerType)__this->___method_ptr_0)(___obj0, method);
-}
-void Action_1_Invoke_m720B82A3BAF84244BB030145EA2755A324F703B4_OpenStaticInvoker(Action_1_t842004A8BCBB22C216E75A1DF8C5B746ACD24ECC* __this, DeviceInfo_tD672F72E1365BFD8A52EB7A1BCC2BE79BBE40CDA ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker1< DeviceInfo_tD672F72E1365BFD8A52EB7A1BCC2BE79BBE40CDA >::Invoke(__this->___method_ptr_0, method, NULL, ___obj0);
-}
-void Action_1_Invoke_m720B82A3BAF84244BB030145EA2755A324F703B4_ClosedStaticInvoker(Action_1_t842004A8BCBB22C216E75A1DF8C5B746ACD24ECC* __this, DeviceInfo_tD672F72E1365BFD8A52EB7A1BCC2BE79BBE40CDA ___obj0, const RuntimeMethod* method)
-{
-	InvokerActionInvoker2< RuntimeObject*, DeviceInfo_tD672F72E1365BFD8A52EB7A1BCC2BE79BBE40CDA >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___obj0);
-}
-// System.Void System.Action`1<UnityEngine.InputSystem.InputAnalytics/StartupEventData/DeviceInfo>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m0A43F5772F9C63C4F4942ECAD5679D84C9AC7136_gshared (Action_1_t842004A8BCBB22C216E75A1DF8C5B746ACD24ECC* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
-{
-	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
-	__this->___method_3 = ___method1;
-	__this->___m_target_2 = ___object0;
-	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
-	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
-	__this->___method_code_6 = (intptr_t)__this;
-	if (MethodIsStatic((RuntimeMethod*)___method1))
-	{
-		bool isOpen = parameterCount == 1;
-		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m720B82A3BAF84244BB030145EA2755A324F703B4_OpenStaticInvoker;
-			else
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m720B82A3BAF84244BB030145EA2755A324F703B4_ClosedStaticInvoker;
-		else
-			if (isOpen)
-				__this->___invoke_impl_1 = (intptr_t)&Action_1_Invoke_m720B82A3BAF84244BB030145EA2755A324F703B4_Open;
-			else
-				{
-					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-				}
-	}
-	else
-	{
-		__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
-		__this->___method_code_6 = (intptr_t)__this->___m_target_2;
-	}
-	__this->___extra_arg_5 = (intptr_t)&Action_1_Invoke_m720B82A3BAF84244BB030145EA2755A324F703B4_Multicast;
-}
-// System.Void System.Action`1<UnityEngine.InputSystem.InputAnalytics/StartupEventData/DeviceInfo>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m720B82A3BAF84244BB030145EA2755A324F703B4_gshared (Action_1_t842004A8BCBB22C216E75A1DF8C5B746ACD24ECC* __this, DeviceInfo_tD672F72E1365BFD8A52EB7A1BCC2BE79BBE40CDA ___obj0, const RuntimeMethod* method) 
-{
-	typedef void (*FunctionPointerType) (RuntimeObject*, DeviceInfo_tD672F72E1365BFD8A52EB7A1BCC2BE79BBE40CDA, const RuntimeMethod*);
 	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___obj0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
 }
 #ifdef __clang__

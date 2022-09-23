@@ -31,7 +31,6 @@ Library: lib_burst_generated
 --compilation-defines=UNITY_2021_1_OR_NEWER
 --compilation-defines=UNITY_2021_2_OR_NEWER
 --compilation-defines=UNITY_2021_3_OR_NEWER
---compilation-defines=UNITY_ANALYTICS
 --compilation-defines=USE_SEARCH_ENGINE_API
 --compilation-defines=USE_SEARCH_TABLE
 --compilation-defines=USE_SEARCH_MODULE
@@ -150,6 +149,7 @@ Library: lib_burst_generated
 --compilation-defines=INCLUDE_UGUI
 --compilation-defines=INCLUDE_INPUT_SYSTEM
 --compilation-defines=INCLUDE_LEGACY_INPUT_HELPERS
+--compilation-defines=UNITY_ANALYTICS
 --compilation-defines=TIMELINE_FRAMEACCURATE
 --compilation-defines=VFX_HAS_TIMELINE
 --compilation-defines=VFX_HAS_TERRAINMODULE
@@ -198,7 +198,6 @@ Library: lib_burst_generated
 --root-assembly=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/Data/Managed/UnityEngine.Purchasing.Security.dll
 --root-assembly=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/Data/Managed/Unity.XR.Management.dll
 --root-assembly=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/Data/Managed/Unity.ProBuilder.KdTree.dll
---root-assembly=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/Data/Managed/Unity.Analytics.DataPrivacy.dll
 --root-assembly=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/Data/Managed/Purchasing.Common.dll
 --root-assembly=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/Data/Managed/Unity.Services.Core.Threading.dll
 --root-assembly=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/Data/Managed/Unity.Services.Core.Configuration.dll
