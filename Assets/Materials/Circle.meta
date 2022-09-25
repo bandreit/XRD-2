@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Materials/Circle.meta
 guid: d28c5d597b31a3e4f821d74651bd1e3d
+=======
+guid: 9f8f05b09aa491a40898c525c113aa2c
+>>>>>>> 2e2ae1bdf65c7d2477003f39789d3c1a3c912f8f:Assets/Materials/Apple_Costumed.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
