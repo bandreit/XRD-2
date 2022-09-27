@@ -2193,6 +2193,51 @@ Transform:
   m_Father: {fileID: 5667104418716060546}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7107152857638125638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4358669038561666004}
+  - component: {fileID: 6293400365362127509}
+  m_Layer: 0
+  m_Name: Area
+  m_TagString: TirgerArea
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4358669038561666004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7107152857638125638}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalScale: {x: 15, y: 15, z: 15}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7259941548785711753}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6293400365362127509
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7107152857638125638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7169743561759853597
 GameObject:
   m_ObjectHideFlags: 0
@@ -2424,7 +2469,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7259941548785711753}
   - component: {fileID: 7790493219161339478}
-  - component: {fileID: 9119497360634664198}
+  - component: {fileID: 7187623411868249012}
+  - component: {fileID: 243052826026624024}
   m_Layer: 0
   m_Name: Apple_Silent_Root
   m_TagString: Untagged
@@ -2445,6 +2491,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7256478746263773957}
+  - {fileID: 4358669038561666004}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2457,8 +2504,8 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7478716280786378077}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f6dce9e8e2b44c548b134c5cb177f432, type: 2}
+  m_Avatar: {fileID: 9000000, guid: 2bd3b810443483d44adf16be12c0f8d8, type: 3}
+  m_Controller: {fileID: 9100000, guid: 0c409df72dc8f40258deeb947caf3749, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -2468,7 +2515,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &9119497360634664198
+--- !u!54 &7187623411868249012
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7478716280786378077}
+  serializedVersion: 2
+  m_Mass: 50
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &243052826026624024
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2477,72 +2540,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7478716280786378077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db8052edd37c5da4ba56c08244eb648a, type: 3}
+  m_Script: {fileID: 11500000, guid: 9c993be9796784b97838ee9495d8c497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Mapper: {fileID: 11400000, guid: 84d729034a23d2f4082fb534dad51e3b, type: 2}
-  m_EnabledChannels: 15
-  m_BlendShapes:
-    BrowDownLeft: 0
-    BrowDownRight: 0
-    BrowInnerUp: 0
-    BrowOuterUpLeft: 0
-    BrowOuterUpRight: 0
-    CheekPuff: 0
-    CheekSquintLeft: 0
-    CheekSquintRight: 0
-    EyeBlinkLeft: 0
-    EyeBlinkRight: 0
-    EyeLookDownLeft: 0
-    EyeLookDownRight: 0
-    EyeLookInLeft: 0
-    EyeLookInRight: 0
-    EyeLookOutLeft: 0
-    EyeLookOutRight: 0
-    EyeLookUpLeft: 0
-    EyeLookUpRight: 0
-    EyeSquintLeft: 0
-    EyeSquintRight: 0
-    EyeWideLeft: 0
-    EyeWideRight: 0
-    JawForward: 0
-    JawLeft: 0
-    JawOpen: 0
-    JawRight: 0
-    MouthClose: 0
-    MouthDimpleLeft: 0
-    MouthDimpleRight: 0
-    MouthFrownLeft: 0
-    MouthFrownRight: 0
-    MouthFunnel: 0
-    MouthLeft: 0
-    MouthLowerDownLeft: 0
-    MouthLowerDownRight: 0
-    MouthPressLeft: 0
-    MouthPressRight: 0
-    MouthPucker: 0
-    MouthRight: 0
-    MouthRollLower: 0
-    MouthRollUpper: 0
-    MouthShrugLower: 0
-    MouthShrugUpper: 0
-    MouthSmileLeft: 0
-    MouthSmileRight: 0
-    MouthStretchLeft: 0
-    MouthStretchRight: 0
-    MouthUpperUpLeft: 0
-    MouthUpperUpRight: 0
-    NoseSneerLeft: 0
-    NoseSneerRight: 0
-    TongueOut: 0
-  m_HeadPosition: {x: 0, y: 0, z: 0}
-  m_HeadOrientation: {x: 0, y: 0, z: 0}
-  m_LeftEyeOrientation: {x: 0, y: 0, z: 0}
-  m_RightEyeOrientation: {x: 0, y: 0, z: 0}
-  m_BlendShapesEnabled: 0
-  m_HeadPositionEnabled: 0
-  m_HeadOrientationEnabled: 0
-  m_EyeOrientationEnabled: 0
 --- !u!1 &7517078677100411025
 GameObject:
   m_ObjectHideFlags: 0
