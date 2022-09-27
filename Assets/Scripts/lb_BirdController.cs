@@ -267,7 +267,7 @@ public class lb_BirdController : MonoBehaviour {
 			}
 			//Find a point off camera to positon the bird and activate it
 			bird.transform.position = FindPositionOffCamera();
-			Debug.Log(bird.transform.position + " position of bird");
+			// Debug.Log(bird.transform.position + " position of bird");
 			if(bird.transform.position == Vector3.zero){
 				//couldnt find a suitable spawn point
 				return;
@@ -297,8 +297,6 @@ public class lb_BirdController : MonoBehaviour {
 		//cycle through random rays until we find one that doesnt hit anything
 		while(Physics.Raycast(currentCamera.transform.position,ray,out hit,dist)){
 			dist = Random.Range (2,5);
-			loopCheck++;
-			Debug.Log(loopCheck);
 			if (loopCheck > 35){
 				//can't find any good spawn points so lets cancel
 				return Vector3.zero;

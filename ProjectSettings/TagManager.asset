@@ -7,6 +7,10 @@ TagManager:
   - lb_bird
   - log
   - ground
+  - lb_groundTarget
+  - lb_perchTarget
+  - TirgerArea
+  - Camera
   layers:
   - Default
   - TransparentFX
