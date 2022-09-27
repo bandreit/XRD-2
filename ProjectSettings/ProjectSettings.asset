@@ -168,6 +168,8 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -909,11 +911,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 2
-  cloudProjectId: a8bba47e-c8da-424d-83c4-a98eb943cf5b
+  cloudProjectId: cc6b710f-e35d-4a18-96eb-e9f4648271a8
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Start
-  organizationId: nanotm
+  projectName: AR X10
+  organizationId: andy27hush
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
   playerDataPath: 
