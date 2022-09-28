@@ -11,6 +11,18 @@ TagManager:
   - lb_perchTarget
   - TirgerArea
   - Camera
+  - MaterialButtonLayer
+  - MaterialText
+  - MaterialRadioButton
+  - Frog
+  - Racoon
+  - Rabbit
+  - Panda
+  - Canvas
+  - Button1
+  - Button2
+  - Button3
+  - Button4
   layers:
   - Default
   - TransparentFX
