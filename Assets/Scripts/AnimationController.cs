@@ -7,7 +7,7 @@ public class AnimationController : MonoBehaviour
 {
     
     private Animator animator;
-    private String cameraTag = "Camera";
+    private String cameraTag = "MainCamera";
 
     private void Start()
     {
