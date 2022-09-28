@@ -193,6 +193,7 @@ PlayerSettings:
   m_ColorGamuts: 00000000
   targetPixelDensity: 30
   resolutionScalingMode: 0
+  resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
@@ -785,6 +786,7 @@ PlayerSettings:
   ps4videoRecordingFeaturesUsed: 0
   ps4contentSearchFeaturesUsed: 0
   ps4CompatibilityPS5: 0
+  ps4AllowPS5Detection: 0
   ps4GPU800MHz: 1
   ps4attribEyeToEyeDistanceSettingVR: 0
   ps4IncludedModules: []
@@ -919,11 +921,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 2
-  cloudProjectId: cc6b710f-e35d-4a18-96eb-e9f4648271a8
+  cloudProjectId: a8bba47e-c8da-424d-83c4-a98eb943cf5b
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: AR X10
-  organizationId: andy27hush
+  projectName: Start
+  organizationId: nanotm
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
   playerDataPath: 

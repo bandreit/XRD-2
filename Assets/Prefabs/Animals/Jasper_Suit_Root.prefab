@@ -3599,7 +3599,7 @@ GameObject:
   - component: {fileID: 8787557660176504554}
   m_Layer: 0
   m_Name: Jasper_Suit_Root
-  m_TagString: Untagged
+  m_TagString: Racoon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

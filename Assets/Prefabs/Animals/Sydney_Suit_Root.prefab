@@ -2955,7 +2955,7 @@ GameObject:
   - component: {fileID: 9175069327355218429}
   m_Layer: 0
   m_Name: Sydney_Suit_Root
-  m_TagString: Untagged
+  m_TagString: Rabbit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

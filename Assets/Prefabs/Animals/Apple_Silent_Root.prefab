@@ -2473,7 +2473,7 @@ GameObject:
   - component: {fileID: 243052826026624024}
   m_Layer: 0
   m_Name: Apple_Silent_Root
-  m_TagString: Untagged
+  m_TagString: Panda
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
