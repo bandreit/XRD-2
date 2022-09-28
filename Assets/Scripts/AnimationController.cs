@@ -10,11 +10,6 @@ public class AnimationController : MonoBehaviour
     private String cameraTag = "Camera";
     private Canvas canvas;
 
-    private bool rabbitQuiz = false;
-    private bool pandaQuiz = false;
-    private bool frogQuiz = false;
-    private bool racoonQuiz = false;
-
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -24,28 +19,10 @@ public class AnimationController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (rabbitQuiz) return;
-        // && (pandaQuiz || frogQuiz || rabbitQuiz || rabbitQuiz)
         if (other.gameObject.CompareTag(cameraTag))
         {
             animator.SetBool("isDancing", true);
             canvas.enabled = true;
-            rabbitQuiz = true;
-            // switch (this.gameObject.tag)
-            // {
-            //     case "Panda":
-            //         pandaQuiz = false;
-            //         break;
-            //     case "Frog":
-            //         frogQuiz = false;
-            //         break;
-            //     case "Racoon":
-            //         racoonQuiz = false;
-            //         break;
-            //     case "Rabbit":
-            //         rabbitQuiz = false;
-            //         break;
-            // }
         }
     }
 
@@ -61,10 +38,7 @@ public class AnimationController : MonoBehaviour
 
     public void FirstButton()
     {
-        Debug.Log("Bralaaaaa");
-        // GameObject button = GameObject.FindGameObjectWithTag("Button1");
-        // Image image = button.GetComponent<Image>();
-        // image.color = new Color(255, 0, 0);
+        Debug.Log("Button 1");
         canvas.enabled = false;
     }
 
