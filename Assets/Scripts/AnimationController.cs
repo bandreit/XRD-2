@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class AnimationController : MonoBehaviour
 {
     private Animator animator;
-    private String cameraTag = "Camera";
+    private String cameraTag = "MainCamera";
     private Canvas canvas;
     private bool didEnter = false;
 

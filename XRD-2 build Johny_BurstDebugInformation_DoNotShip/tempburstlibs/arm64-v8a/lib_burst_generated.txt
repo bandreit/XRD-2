@@ -133,7 +133,6 @@ Library: lib_burst_generated
 --compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_PHYSICS
 --compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_PHYSICS2D
 --compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_UI
---compilation-defines=VISUAL_EFFECT_GRAPH_0_0_1_OR_NEWER
 --compilation-defines=ENABLE_BURST_1_0_0_OR_NEWER
 --compilation-defines=USING_ANIMATION_MODULE
 --compilation-defines=USING_PHYSICS2D_MODULE
@@ -151,12 +150,6 @@ Library: lib_burst_generated
 --compilation-defines=INCLUDE_LEGACY_INPUT_HELPERS
 --compilation-defines=UNITY_ANALYTICS
 --compilation-defines=TIMELINE_FRAMEACCURATE
---compilation-defines=VFX_HAS_TIMELINE
---compilation-defines=VFX_HAS_TERRAINMODULE
---compilation-defines=VFX_HAS_UI
---compilation-defines=VFX_HAS_PHYSICS
---compilation-defines=VFX_HAS_AUDIO
---compilation-defines=VFX_HAS_INPUT_SYSTEM_PACKAGE
 --generate-link-xml=Temp/burst.link.xml
 --output=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/tempburstlibs/arm64-v8a/lib_burst_generated
 --root-assembly=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/Data/Managed/Unity.XR.ARFoundation.dll
@@ -189,7 +182,6 @@ Library: lib_burst_generated
 --root-assembly=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/Data/Managed/Unity.XR.OpenXR.dll
 --root-assembly=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/Data/Managed/Unity.Timeline.dll
 --root-assembly=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/Data/Managed/Unity.Mathematics.dll
---root-assembly=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/Data/Managed/Unity.VisualEffectGraph.Runtime.dll
 --root-assembly=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/Data/Managed/Unity.Services.Core.Scheduler.dll
 --root-assembly=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/Data/Managed/Unity.Services.Core.Device.dll
 --root-assembly=/Users/dkAndBos/Desktop/XRD/XRD-2/Temp/StagingArea/Data/Managed/UnityEngine.Purchasing.WinRTStub.dll
