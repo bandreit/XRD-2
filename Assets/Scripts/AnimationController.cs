@@ -9,6 +9,7 @@ public class AnimationController : MonoBehaviour
     private Animator animator;
     private String cameraTag = "Camera";
     private Canvas canvas;
+    private bool didEnter = false;
 
     private void Start()
     {
@@ -21,8 +22,10 @@ public class AnimationController : MonoBehaviour
     {
         if (other.gameObject.CompareTag(cameraTag))
         {
+            if (didEnter) return;
             animator.SetBool("isDancing", true);
             canvas.enabled = true;
+            didEnter = true;
         }
     }
 

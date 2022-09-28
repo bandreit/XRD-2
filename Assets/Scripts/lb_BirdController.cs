@@ -297,6 +297,7 @@ public class lb_BirdController : MonoBehaviour {
 		//cycle through random rays until we find one that doesnt hit anything
 		while(Physics.Raycast(currentCamera.transform.position,ray,out hit,dist)){
 			dist = Random.Range (2,5);
+			loopCheck++;
 			if (loopCheck > 35){
 				//can't find any good spawn points so lets cancel
 				return Vector3.zero;
