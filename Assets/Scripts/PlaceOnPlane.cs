@@ -74,10 +74,10 @@ public class PlaceOnPlane : MonoBehaviour
             {
                 spawnedObject = Instantiate(m_PlacedPrefab, hitPose.position, hitPose.rotation);
             }
-            else
-            {
-                spawnedObject.transform.position = hitPose.position;
-            }
+            // else
+            // {
+            //     spawnedObject.transform.position = hitPose.position;
+            // }
         }
     }
 
